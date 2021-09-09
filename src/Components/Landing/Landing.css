@@ -4,8 +4,15 @@
 }
 
 .hero {
-  padding-top: 3vh;
   width: 86vw;
+}
+
+@media only screen and (max-width: 425px) {
+  .hero {
+    padding-top: 5em;
+    height: auto;
+    width: 100vw;
+  }
 }
 
 .CTA {
@@ -22,12 +29,30 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 27vh;
+  height: 30vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .CTA {
+    height: 55vh;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .CTA {
+    height: 60vh;
+  }
 }
 
 .CTAText {
   font-size: 5.5em;
   font-family: "Crimson Text", serif;
   color: white;
+}
+
+@media only screen and (max-width: 425px) {
+  .CTAText {
+    font-size: 3em;
+  }
 }
 /*# sourceMappingURL=Landing.css.map */

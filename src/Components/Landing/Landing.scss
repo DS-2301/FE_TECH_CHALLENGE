@@ -6,8 +6,13 @@
 }
 
 .hero {
-  padding-top: 3vh;
   width: 86vw;
+
+  @include sm-screen {
+    padding-top: 5em;
+    height: auto;
+    width: 100vw;
+  }
 }
 
 .CTA {
@@ -15,11 +20,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 27vh;
+  height: 30vh;
+
+  @include md-screen {
+    height: 55vh;
+  }
+
+  @include sm-screen {
+    height: 60vh;
+  }
 }
 
 .CTAText {
   font-size: $xxl;
   font-family: $contentFont;
   color: white;
+
+  @include sm-screen {
+    font-size: $xl;
+  }
 }

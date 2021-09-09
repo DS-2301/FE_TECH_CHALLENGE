@@ -12,7 +12,7 @@
   height: 5em;
   position: fixed;
   border: 1px solid #000000;
-  z-index: 2;
+  z-index: 3;
 }
 
 .logo {
@@ -21,12 +21,16 @@
   font-size: $l;
   font-family: $titleFont;
   margin-left: 7vw;
+
+  @include sm-screen {
+    font-size: $m;
+  }
 }
 
 .cartInteractionButton {
   border: none;
-  width: 150px;
-  height: 58px;
+  width: 6em;
+  height: 2.5em;
   background-color: black;
   font-family: $titleFont;
   color: #fff;
@@ -36,6 +40,10 @@
   text-align: center;
   transition: all 0.5s ease;
   border: 1px solid black;
+
+  @include sm-screen {
+    font-size: $xs;
+  }
 }
 
 .cartInteractionButton:hover {

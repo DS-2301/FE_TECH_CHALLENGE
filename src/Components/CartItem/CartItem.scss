@@ -1,0 +1,58 @@
+@import "../../Variables/Variables.scss";
+
+.cartItem {
+  display: flex;
+  border-bottom: 1px solid black;
+  font-family: $contentFont;
+  padding: 1em;
+}
+
+.cartItemImage {
+  width: 12vw;
+  height: 12vw;
+  @include md-screen {
+    align-self: center;
+  }
+}
+
+.cartItemInfo {
+  margin-left: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cartItemName {
+  margin-bottom: 0;
+  font-size: $xs;
+
+  @include xl-screen {
+    font-size: $m;
+  }
+}
+
+.cartItemBrand,
+.cartItemPrice {
+  margin-top: 0.2em;
+  font-size: $xxs;
+
+  @include xl-screen {
+    font-size: $m;
+  }
+}
+
+.cartDeleteItemButton {
+  border: none;
+  background: none;
+  font-size: $m;
+  align-self: flex-start;
+  margin-left: 2em;
+
+  @include xl-screen {
+    margin-left: 5em;
+  }
+
+  @include md-screen {
+    margin-left: 1em;
+  }
+}

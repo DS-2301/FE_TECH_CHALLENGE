@@ -17,7 +17,7 @@
   height: 5em;
   position: fixed;
   border: 1px solid #000000;
-  z-index: 2;
+  z-index: 3;
 }
 
 .logo {
@@ -28,10 +28,16 @@
   margin-left: 7vw;
 }
 
+@media only screen and (max-width: 425px) {
+  .logo {
+    font-size: 1.875em;
+  }
+}
+
 .cartInteractionButton {
   border: none;
-  width: 150px;
-  height: 58px;
+  width: 6em;
+  height: 2.5em;
   background-color: black;
   font-family: "Montserrat", sans-serif;
   color: #fff;
@@ -42,6 +48,12 @@
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   border: 1px solid black;
+}
+
+@media only screen and (max-width: 425px) {
+  .cartInteractionButton {
+    font-size: 1.17em;
+  }
 }
 
 .cartInteractionButton:hover {

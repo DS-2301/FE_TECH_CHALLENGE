@@ -2,7 +2,8 @@ export const addItemToStore = (state, item) => {
   const items = { ...state.items };
 
   if (Object.keys(items).length > 0) {
-    items[Object.keys(items).length + 1] = item;
+    items[Math.max(...Object.keys(items).map(Number)) + 1] = item;
+    console.warn(Math.max(...Object.keys(items).map(Number)));
   } else {
     items[0] = item;
   }
@@ -20,6 +21,7 @@ export const addItemToStore = (state, item) => {
 
 export const removeItemFromStore = (state, id) => {
   const items = { ...state.items };
+
   if (items[id]) {
     delete items[id];
   }

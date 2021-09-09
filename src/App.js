@@ -2,9 +2,10 @@ import Landing from "./Components/Landing/Landing";
 import Navbar from "./Components/Navbar/Navbar";
 import "./App.css";
 import Shop from "./Components/Shop/Shop";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { fetchData } from "./store/utils/thunkCreators";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import CartDrawer from "./Components/CartDrawer/CartDrawer";
 
 function App() {
   const dispatch = useDispatch();
@@ -12,10 +13,19 @@ function App() {
     dispatch(fetchData());
   }, [dispatch]);
 
+  const cart = useSelector((store) => store.cart);
+
+  const [cartOpened, setCartOpened] = useState(false);
+
+  const handleCart = () => {
+    setCartOpened((prev) => !prev);
+  };
+
   return (
     <div className="App">
       <div className="main">
-        <Navbar />
+        <Navbar handleCart={handleCart} />
+        <CartDrawer show={cartOpened} cart={cart} />
         <div className="container">
           <Landing />
           <Shop />

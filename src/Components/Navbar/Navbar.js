@@ -1,13 +1,15 @@
 import "./Navbar.css";
 
-export default function Navbar() {
+export default function Navbar({ handleCart }) {
   return (
     <div className="navbar">
       <a className="logo" href="/">
         {" "}
         Fülhaus Shop
       </a>
-      <button className="cartInteractionButton">CART</button>
+      <button className="cartInteractionButton" onClick={() => handleCart()}>
+        CART
+      </button>
     </div>
   );
 }

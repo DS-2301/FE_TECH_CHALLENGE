@@ -11,12 +11,32 @@
   display: flex;
   z-index: 1;
   font-family: $contentFont;
+
+  @include md-screen {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  @include sm-screen {
+    width: 80vw;
+    height: 80vw;
+  }
 }
 
 .cardImage {
   width: 23.85vw;
   height: 23.85vw;
   border-radius: 38.8548px;
+
+  @include md-screen {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  @include sm-screen {
+    width: 80vw;
+    height: 80vw;
+  }
 }
 
 .productDescription {
@@ -34,7 +54,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2.13vw 2.63vw 2.13vw 2.63vw;
+  padding: 2.75vw 2.5vw 2.75vw 2.5vw;
+
+  @include md-screen {
+    padding: 4vw 3.5vw 4vw 3.5vw;
+  }
 }
 
 .descSection {
@@ -47,17 +71,34 @@
   justify-content: space-between;
 }
 
-.itemCard:hover .productDescription {
+.itemCard:hover .productDescription,
+.itemCard:active .productDescription {
   visibility: visible;
   opacity: 1;
 }
 
 .productName {
   font-size: $m;
+
+  @include xl-screen {
+    font-size: $xl;
+  }
+
+  @include xs-screen {
+    font-size: $s;
+  }
 }
 
 .productBrand {
   font-size: $s;
+
+  @include xl-screen {
+    font-size: $l;
+  }
+
+  @include xs-screen {
+    font-size: $xs;
+  }
 }
 
 .addToCart {
@@ -67,8 +108,21 @@
   color: white;
   font-family: $contentFont;
   cursor: pointer;
+  transition: color 0.2s;
+
+  @include xl-screen {
+    font-size: $l;
+  }
+}
+
+.addToCart:active {
+  color: gray;
 }
 
 .price {
   font-size: $sm;
+
+  @include xl-screen {
+    font-size: $xl;
+  }
 }

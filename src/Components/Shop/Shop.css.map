@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,YAAY,CAAC;EACX,MAAM,EAAE,eAAe;EACvB,aAAa,EAAE,IAAI;EACnB,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,YAAY;EAC7B,WAAW,EAAE,GAAG;EAChB,cAAc,EAAE,GAAG;CACpB",
+    "mappings": "AAEA,AAAA,YAAY,CAAC;EACX,MAAM,EAAE,eAAe;EACvB,aAAa,EAAE,IAAI;EACnB,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,YAAY;EAC7B,WAAW,EAAE,GAAG;EAChB,cAAc,EAAE,GAAG;CACpB",
     "sources": [
-        "Shop.scss"
+        "Shop.scss",
+        "../../Variables/Variables.scss"
     ],
     "names": [],
     "file": "Shop.css"

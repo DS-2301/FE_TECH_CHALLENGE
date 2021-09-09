@@ -1,4 +1,4 @@
-import { getCart, addItem, removeItem, calculateSum } from "../cart";
+import { getCart } from "../cart";
 import { getProducts, setFetchingStatus } from "../products";
 import axios from "axios";
 

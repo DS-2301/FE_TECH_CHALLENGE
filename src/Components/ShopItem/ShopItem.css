@@ -13,10 +13,38 @@
   font-family: "Crimson Text", serif;
 }
 
+@media only screen and (max-width: 768px) {
+  .itemCard {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .itemCard {
+    width: 80vw;
+    height: 80vw;
+  }
+}
+
 .cardImage {
   width: 23.85vw;
   height: 23.85vw;
   border-radius: 38.8548px;
+}
+
+@media only screen and (max-width: 768px) {
+  .cardImage {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .cardImage {
+    width: 80vw;
+    height: 80vw;
+  }
 }
 
 .productDescription {
@@ -42,7 +70,13 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2.13vw 2.63vw 2.13vw 2.63vw;
+  padding: 2.75vw 2.5vw 2.75vw 2.5vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .productDescription {
+    padding: 4vw 3.5vw 4vw 3.5vw;
+  }
 }
 
 .descSection {
@@ -64,7 +98,8 @@
           justify-content: space-between;
 }
 
-.itemCard:hover .productDescription {
+.itemCard:hover .productDescription,
+.itemCard:active .productDescription {
   visibility: visible;
   opacity: 1;
 }
@@ -73,8 +108,32 @@
   font-size: 1.875em;
 }
 
+@media only screen and (min-width: 1770px) {
+  .productName {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .productName {
+    font-size: 1.5em;
+  }
+}
+
 .productBrand {
   font-size: 1.5em;
+}
+
+@media only screen and (min-width: 1770px) {
+  .productBrand {
+    font-size: 2.25em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .productBrand {
+    font-size: 1.17em;
+  }
 }
 
 .addToCart {
@@ -84,9 +143,27 @@
   color: white;
   font-family: "Crimson Text", serif;
   cursor: pointer;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+@media only screen and (min-width: 1770px) {
+  .addToCart {
+    font-size: 2.25em;
+  }
+}
+
+.addToCart:active {
+  color: gray;
 }
 
 .price {
   font-size: 1.7em;
+}
+
+@media only screen and (min-width: 1770px) {
+  .price {
+    font-size: 3em;
+  }
 }
 /*# sourceMappingURL=ShopItem.css.map */

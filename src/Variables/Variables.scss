@@ -11,3 +11,25 @@ $m: 1.875em;
 $l: 2.25em;
 $xl: 3em;
 $xxl: 5.5em;
+
+//Mixins
+@mixin xl-screen {
+  @media only screen and (min-width: 1770px) {
+    @content;
+  }
+}
+@mixin md-screen {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin sm-screen {
+  @media only screen and (max-width: 425px) {
+    @content;
+  }
+}
+@mixin xs-screen {
+  @media only screen and (max-width: 320px) {
+    @content;
+  }
+}
