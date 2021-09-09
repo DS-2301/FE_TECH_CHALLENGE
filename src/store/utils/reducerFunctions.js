@@ -3,7 +3,6 @@ export const addItemToStore = (state, item) => {
 
   if (Object.keys(items).length > 0) {
     items[Math.max(...Object.keys(items).map(Number)) + 1] = item;
-    console.warn(Math.max(...Object.keys(items).map(Number)));
   } else {
     items[0] = item;
   }

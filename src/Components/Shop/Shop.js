@@ -10,7 +10,7 @@ export default function Shop() {
       {products.isFetching === true
         ? loadingProducts.map((item, index) => {
             return <ShopItem item={item} key={index} />;
-            // usage of index in this case appropriate because it's unique and predicted
+            // usage of index in this case appropriate because it's unique and predictable
           })
         : Object.values(products).map((item) => {
             if (item) return <ShopItem item={item} key={item._id} />;

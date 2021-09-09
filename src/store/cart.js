@@ -3,9 +3,8 @@ import { addItemToStore, removeItemFromStore } from "./utils/reducerFunctions";
 const GET_CART = "GET_CART";
 const ADD_ITEM = "ADD_ITEM";
 const REMOVE_ITEM = "REMOVE_ITEM";
-// const CALCULATE_SUM = "CALCULATE_SUM";
 
-//In future could be used to get saved cart for the particular user, for now just set initial state of the cart
+//In the future this could be used to get saved cart for the particular user, for now just set initial state of the cart
 export const getCart = () => {
   return {
     type: GET_CART,
@@ -25,12 +24,6 @@ export const removeItem = (itemId) => {
     itemId,
   };
 };
-
-// export const calculateSum = () => {
-//   return {
-//     type: CALCULATE_SUM,
-//   };
-// };
 
 const reducer = (state = { items: {}, total: 0 }, action) => {
   switch (action.type) {
