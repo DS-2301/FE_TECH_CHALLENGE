@@ -1,0 +1,15 @@
+.shopContent {
+  border: black 1px solid;
+  border-bottom: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+/*# sourceMappingURL=Shop.css.map */

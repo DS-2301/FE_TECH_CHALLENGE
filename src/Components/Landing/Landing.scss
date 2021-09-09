@@ -1,0 +1,25 @@
+@import "../../Variables/Variables.scss";
+
+.heroTitle {
+  background-color: #003941;
+  height: 100vh;
+}
+
+.hero {
+  padding-top: 3vh;
+  width: 86vw;
+}
+
+.CTA {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 27vh;
+}
+
+.CTAText {
+  font-size: $xxl;
+  font-family: $contentFont;
+  color: white;
+}

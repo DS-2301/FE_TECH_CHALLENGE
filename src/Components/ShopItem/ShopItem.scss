@@ -1,0 +1,74 @@
+@import "../../Variables/Variables.scss";
+
+.itemCard {
+  position: relative;
+  background-color: white;
+  border-radius: 38.8548px;
+  width: 23.85vw;
+  height: 23.85vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  display: flex;
+  z-index: 1;
+  font-family: $contentFont;
+}
+
+.cardImage {
+  width: 23.85vw;
+  height: 23.85vw;
+  border-radius: 38.8548px;
+}
+
+.productDescription {
+  border-radius: 38.8548px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000000cc;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.13vw 2.63vw 2.13vw 2.63vw;
+}
+
+.descSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemCard:hover .productDescription {
+  visibility: visible;
+  opacity: 1;
+}
+
+.productName {
+  font-size: $m;
+}
+
+.productBrand {
+  font-size: $s;
+}
+
+.addToCart {
+  background: none;
+  border: none;
+  font-size: $xs;
+  color: white;
+  font-family: $contentFont;
+  cursor: pointer;
+}
+
+.price {
+  font-size: $sm;
+}
